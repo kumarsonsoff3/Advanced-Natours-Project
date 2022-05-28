@@ -1,3 +1,5 @@
+// if all the child elements are the floats thent the height collapses and this is why we use the clearFix hack!
+
 @mixin clearFix {
   &::after {
     content: "";

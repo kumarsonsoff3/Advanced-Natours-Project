@@ -23,6 +23,10 @@
   // * for class contain col
   // we can select specific "href" attribute, or something like specific target attribute, and much more!
 
+  // attribute selector [alt="logo"]
+  // ^= is used to select the all elements starting with the "col-"
+  // we also can use the * to select all the elements which contain the "col-"
+  // $ to select elements which have class ending with "col-"
   [class^="col-"] {
     background-color: #7fffd4;
     float: left;
