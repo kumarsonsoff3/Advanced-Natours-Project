@@ -1,8 +1,10 @@
 .row {
+  // simply mean that if  the viewport has enough width then it will continue to show in that space, but if the viewport width is smaller then it will start to addapt!!
   max-width: $grid-width;
-  background-color: rgb(196, 194, 194);
+  background-color: rgb(177, 186, 242);
   margin: 0 auto; // to center block elements inside another block elements
 
+  // not pesudo class, to select everything except the last child!!
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -10,6 +12,9 @@
   @include clearFix;
 
   .col-1-of-2 {
+    // huge advantage of using this in sass is that here we can mix the units. We cannot do calc's between the different units with native CSS.
+
+    // In calc function, to use the sass variable then we need to nest them into parentsis like #{$variableName}
     width: calc((100% - #{$gutter-horizontal}) / 2);
   }
 
