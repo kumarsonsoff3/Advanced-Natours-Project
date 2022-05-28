@@ -1,8 +1,8 @@
 .row {
   // simply mean that if  the viewport has enough width then it will continue to show in that space, but if the viewport width is smaller then it will start to addapt!!
   max-width: $grid-width;
-  background-color: rgb(177, 186, 242);
-  margin: 0 auto; // to center block elements inside another block elements
+  margin: 0 auto;
+  // to center block elements inside another block elements
 
   // not pesudo class, to select everything except the last child!!
   &:not(:last-child) {
@@ -28,7 +28,6 @@
   // we also can use the * to select all the elements which contain the "col-"
   // $ to select elements which have class ending with "col-"
   [class^="col-"] {
-    background-color: #7fffd4;
     float: left;
 
     &:not(:last-child) {
