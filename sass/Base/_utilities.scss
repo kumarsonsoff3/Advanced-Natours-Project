@@ -4,6 +4,12 @@
 
 // if an inline block is nested into a div element, then it's treated as a text, so we can use the text-align: center; property.
 
-.u__margin_bottom_8 {
+.u__margin_bottom_small {
+  margin-bottom: 1.5rem;
+}
+.u__margin_bottom_medium {
+  margin-bottom: 4rem;
+}
+.u__margin_bottom_big {
   margin-bottom: 8rem;
 }
