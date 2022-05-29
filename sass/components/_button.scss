@@ -12,11 +12,6 @@
   }
 
   &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    box-shadow: 0 1rem 2rem #000;
-  }
-  &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 
@@ -72,6 +67,7 @@
 
     &:hover {
       background-color: $color-primary;
+      border-radius: 5px;
       color: $color-white;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
       transform: translateY(-2px);

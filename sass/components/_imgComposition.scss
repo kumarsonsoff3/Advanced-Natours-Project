@@ -1,0 +1,45 @@
+.img__composition {
+  position: relative;
+
+  &_photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    position: absolute;
+
+    // best way to position the photos on one another is by using the absolute positioning.
+
+    // And when we use the position to absolute, then we know that it uses the reference, and the reference is with respect to the first parent element with it's position set to something
+
+    &_p1 {
+      left: 0;
+      top: -3rem;
+    }
+
+    &_p2 {
+      right: 0rem;
+      top: 2rem;
+    }
+
+    &_p3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &:hover {
+      //   border: 1.3rem solid $color-primary;
+      //   padding: 1.5rem;
+      //   background: transparent;
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.08);
+      z-index: 20;
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+    }
+  }
+
+  &:hover &_photo:not(:hover) {
+    transform: scale(0.84);
+  }
+}
