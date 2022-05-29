@@ -33,7 +33,7 @@
       //   padding: 1.5rem;
       //   background: transparent;
       outline: 1.5rem solid $color-primary;
-      transform: scale(1.08);
+      transform: scale(1.08) translateY(-0.5rem);
       z-index: 20;
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
     }
