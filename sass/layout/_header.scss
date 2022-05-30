@@ -12,6 +12,7 @@
   overflow: hidden;
 
   /* used to create or crop a polygon for this one! */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__web-icon {
