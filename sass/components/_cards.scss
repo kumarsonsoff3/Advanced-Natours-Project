@@ -10,6 +10,14 @@
   position: relative;
   //   to work it in the mozilla firefox as well, we should add the -moz prefix here
 
+  &_large {
+    transform: scale(1.1);
+    outline: 3px solid #ee0b0b;
+    outline-offset: 6.8px;
+    border-radius: 1px;
+    transition: all 0.2s;
+  }
+
   &__side {
     height: 52rem;
     width: 100%;
