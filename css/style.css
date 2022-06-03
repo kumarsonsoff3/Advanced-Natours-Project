@@ -110,13 +110,22 @@ body {
 .u__margin_top_big {
   margin-top: 8rem; }
 
+.u__margin_top_medium {
+  margin-top: 2.7rem;
+  margin-left: -2rem; }
+
 .u__margin_top_huge {
   margin-top: 10rem; }
+
+.u__padding_btn_small {
+  padding: 1rem 4rem; }
+
+.u__padding_btn_big {
+  padding: 1.5rem 4rem; }
 
 .btn:visited, .btn:link {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -430,26 +439,29 @@ body {
   width: 49%;
   display: inline-block; }
 
+.form__radio_input {
+  opacity: 0; }
+
 .form__radio_label {
   font-size: 1.6rem;
   cursor: pointer;
   position: relative;
-  padding-left: 4.5rem; }
+  padding-left: 3rem; }
 
 .form__radio-btn {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid #55c57a;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 4px solid #55c57a;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 0;
-  top: -0.4rem; }
+  top: -0.2rem;
+  left: -0.7rem; }
   .form__radio-btn::after {
     content: "";
     display: block;
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -457,9 +469,9 @@ body {
     transform: translate(-50%, -50%);
     background-color: #55c57a;
     opacity: 0;
-    transition: opacity 0.2s; }
+    transition: all 0.2s; }
 
-.form__radio_input:checked ~ .form__radio_label .form__radio-btn {
+.form__radio_input:checked ~ .form__radio_label .form__radio-btn::after {
   opacity: 1; }
 
 .header {
