@@ -10,6 +10,14 @@
   position: relative;
   //   to work it in the mozilla firefox as well, we should add the -moz prefix here
 
+  &_large {
+    transform: scale(1.1);
+    outline: 3px solid #ee0b0b;
+    outline-offset: 6.8px;
+    border-radius: 1px;
+    transition: all 0.2s;
+  }
+
   &__side {
     height: 52rem;
     width: 100%;
@@ -73,6 +81,8 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1 {
       background-image: linear-gradient(
@@ -161,6 +171,31 @@
           border-bottom: 1px solid $color-grey-light2;
         }
       }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $color-white;
+
+    &_only {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    &_value {
+      font-size: 6rem;
+      font-weight: 100;
     }
   }
 }
