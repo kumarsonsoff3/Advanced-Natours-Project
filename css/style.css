@@ -561,3 +561,8 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.section__footer {
+  background-color: #212020;
+  color: #f7f7f7;
+  padding: 10rem 0; }
