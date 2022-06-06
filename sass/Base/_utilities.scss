@@ -1,31 +1,35 @@
 .u__center_text {
-  text-align: center;
+  text-align: center !important;
 }
+
+// the thing that we should not do, we do that in the utility classes, the !important keyword.
+
+// This is because, we need precedence of the utility classes over all other selectors!!
 
 // if an inline block is nested into a div element, then it's treated as a text, so we can use the text-align: center; property.
 
 .u__margin_bottom_small {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 .u__margin_bottom_medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 .u__margin_bottom_big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 .u__margin_top_big {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 .u__margin_top_medium {
-  margin-top: 2.7rem;
-  margin-left: -2rem;
+  margin-top: 2.7rem !important;
+  margin-left: -2rem !important;
 }
 .u__margin_top_huge {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 .u__padding_btn_small {
-  padding: 1rem 4rem;
+  padding: 1rem 3rem !important;
 }
 .u__padding_btn_big {
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 4rem !important;
 }

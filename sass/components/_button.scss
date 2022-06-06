@@ -1,4 +1,6 @@
 .btn {
+  //we can add this to add the styles to btns also, along with the links
+  &,
   &:visited,
   &:link {
     text-transform: uppercase;
@@ -8,6 +10,11 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+
+    // Change the border for the btn elelment
+    // These changes from here doesn't apply because these are only applied when the pseudo classes of link and visited are applied, not for all btn elements!
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -20,7 +27,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
   }
