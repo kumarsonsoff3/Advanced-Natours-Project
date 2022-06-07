@@ -478,6 +478,50 @@ body {
 .form__radio_input:checked ~ .form__radio_label .form__radio-btn::after {
   opacity: 1; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2500; }
+  .popup__content {
+    overflow: hidden;
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    display: table; }
+  .popup__left {
+    display: table-cell;
+    width: 33.33333%; }
+  .popup__right {
+    width: 66.6666666667%;
+    padding: 3rem 5rem;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+
 .header {
   height: 96vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.795), rgba(40, 180, 133, 0.726)), url(../img/hero.jpg);
@@ -593,12 +637,12 @@ body {
   transition: all 0.8s cubic-bezier(0.87, -0.04, 0.02, 1.1); }
 
 .navigation__nav {
+  opacity: 0;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1500;
-  opacity: 0;
   width: 0%;
   transition: all 0.8s cubic-bezier(0.87, -0.04, 0.02, 1.1); }
 

@@ -1,0 +1,72 @@
+// .popup {
+//   display: none;
+//   width: 80vw;
+//   height: 70vh;
+//   z-index: 3000;
+
+//   box-shadow: 0 1rem 6rem rgba($color-black, 0.4);
+// }
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.8);
+  z-index: 2500;
+
+  &__content {
+    overflow: hidden;
+    width: 75%;
+    // height: 62vh;  only for testing purposes!
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.3);
+    @include absoluteCenter;
+    border-radius: 3px;
+    // for the table-cell to work, we have to displat the parent element as the table!
+    display: table;
+  }
+
+  &__left {
+    display: table-cell;
+    width: 33.33333%;
+    // vertical-align: middle;
+    // float: left;
+  }
+
+  &__right {
+    width: 66.6666666667%;
+    padding: 3rem 5rem;
+    // We dont use the floats because it covers the complete height for the left element because they are imgs and the text got shrink in the part in which it can be adjusted, instead we'll use the display: table-cell;
+    display: table-cell;
+    // float: left;
+    // to adjust the position of the text, that occurs in a weird way can be fixed by the following property.
+    vertical-align: middle;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    // these are kind of new properties for them to work, we need to use the prefixes
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem; // 1em == 14px; it's the default size for a text! Also this is the default gap between these columns
+    -moz-column-rule: 1px solid $color-grey-light2;
+
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light2;
+
+    // hyphenation helps in adding the hyphens between the text when there is low space!!
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
