@@ -16,6 +16,39 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" id="navi__toggle" class="navigation__checkbox" />
+      <label for="navi__toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__bg">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__lists">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your Benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular Tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__web-icon">
         <img src="/img/logo-white.png" alt="logo" class="header__logo" />
@@ -28,7 +61,10 @@
             >is where the life happens</span
           >
         </h1>
-        <a href="#" class="btn u__padding_btn_big btn--white btn--animated">
+        <a
+          href="#section__tours"
+          class="btn u__padding_btn_big btn--white btn--animated"
+        >
           Discover Our Tours
         </a>
       </div>
@@ -141,7 +177,7 @@
       </div>
     </section>
 
-    <section class="section__main_tours">
+    <section class="section__main_tours" id="section__tours">
       <div class="u__center_text u__margin_bottom_big">
         <h2 class="heading__secondary">Most Popular Tours</h2>
       </div>
@@ -175,7 +211,7 @@
                   <p class="card__price_value">$397</p>
                 </div>
                 <a
-                  href="#"
+                  href="#popup"
                   class="card_btn btn u__padding_btn_big btn--white btn--animated"
                   >Book now!</a
                 >
@@ -212,7 +248,7 @@
                   <p class="card__price_value">$597</p>
                 </div>
                 <a
-                  href="#"
+                  href="#popup"
                   class="card_btn u__padding_btn_big btn btn--white btn--animated"
                   >Book now!</a
                 >
@@ -249,7 +285,7 @@
                   <p class="card__price_value">$1097</p>
                 </div>
                 <a
-                  href="#"
+                  href="#popup"
                   class="card_btn u__padding_btn_big btn btn--white btn--animated"
                   >Book now!</a
                 >
@@ -440,6 +476,35 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img class="popup__img" src="img/nat-8.jpg" alt="Tour" />
+          <img class="popup__img" src="img/nat-9.jpg" alt="Another Tour" />
+        </div>
+        <div class="popup__right">
+          <a href="#section__tours" class="popup__close">&times;</a>
+          <h2 class="heading__secondary u__margin_bottom_medium">
+            Start Booking Now
+          </h2>
+          <h3 class="heading__tertiary u__margin_bottom_small">
+            Important &ndash; Please read these terms before Booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            minima neque sed quae sint, impedit necessitatibus a dignissimos ea
+            itaque nostrum at vel, possimus nobis non tempore adipisci ullam
+            ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo, explicabo non? Natus, corporis. Nihil fugit, incidunt ipsam
+            maiores beatae quisquam alias error inventore corporis officia enim
+            iure maxime tempora quod. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Libero eligendi
+          </p>
+          <a href="#" class="btn u__padding_btn_big btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- 
     <section class="section__footer">
