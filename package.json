@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/kumarsonsoff3/Advanced-Natours-Project#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^8.0.0"
   }
 }
